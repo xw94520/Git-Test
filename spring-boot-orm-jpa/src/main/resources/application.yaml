@@ -1,0 +1,27 @@
+server:
+  port: 8090
+
+spring:
+  datasource:
+   username: wxw
+   password: w5201314
+   url: jdbc:mysql://localhost:3306/springboottest?serverTimezone=UTC
+   #默认的，可以不写
+   driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      #自动创建/更新/验证数据库表结构
+      ddl-auto: update
+    #设置数据库引擎为InnoDB
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    #打印sql语句，方便调试
+    show-sql: true
+
+
+
+
+
+
+
+
+
